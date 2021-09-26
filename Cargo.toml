@@ -1,0 +1,13 @@
+[package]
+name = "testing"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+log = { version = "0.4.14", features = ["max_level_trace", "release_max_level_warn", "std"] }
+obs-wrapper = "0.2.2"
+
+
+[lib]
+crate-type = ["cdylib"]
